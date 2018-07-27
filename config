@@ -214,7 +214,7 @@ assign [class="Google-chrome"] $ws2
 bindsym $mod+m exec rofi -show run -lines 5 -eh 2 -width 100 -padding 800 -opacity "25" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#c4daea" -font "System San Francisco Display 18" -fake-transparency
 
 # Start neccessary functions
-exec Google-chrome
+exec google-chrome
 exec xbindkeys # For multimedia controls
 exec fcitx # For Japanese input
 exec Spotify
