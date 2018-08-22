@@ -204,7 +204,7 @@ bar {
 bindsym XF86MonBrightnessUp exec "light -A 5 
 bindsym XF86MonBrightnessDown exec "light -U 5 
 
-bindsym $mod+Shift+x exec i3lock 
+bindsym $mod+Shift+x exec betterlockscreen -l dim 
 
 # Assign to specific workspace
 for_window [class="Spotify"] move to workspace $ws8
