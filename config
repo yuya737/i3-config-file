@@ -217,7 +217,7 @@ bindsym $mod+m exec rofi -show run -config /home/yuyakawakami/.config/i3/.Xresou
 exec google-chrome
 exec xbindkeys # For multimedia controls
 exec fcitx # For Japanese input
-exec Spotify
+exec spotify
 
 #Start reshift without notificaton
 exec --no-startup-id redshift
