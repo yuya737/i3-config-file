@@ -208,13 +208,13 @@ bindsym $mod+Shift+x exec betterlockscreen -l dim
 
 # Assign to specific workspace
 for_window [class="Spotify"] move to workspace $ws8
-assign [class="Google-chrome"] $ws2
+assign [class="Firefox"] $ws2
 
 # Instead of dmenu, use Rofi
 bindsym $mod+m exec rofi -show run -config /home/yuyakawakami/.config/i3/.Xresources 
 
 # Start neccessary functions
-exec google-chrome
+exec firefox
 exec xbindkeys # For multimedia controls
 exec fcitx # For Japanese input
 exec spotify
