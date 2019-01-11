@@ -105,7 +105,7 @@ set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
-set $ws7 "7"
+set $ws7 "7 Keepass"
 set $ws8 "8: Spotify "
 set $ws9 "9"
 set $ws10 "10"
@@ -209,6 +209,7 @@ bindsym $mod+Shift+x exec betterlockscreen -l dim
 # Assign to specific workspace
 for_window [class="Spotify"] move to workspace $ws8
 assign [class="Firefox"] $ws2
+assign [class="keepass"] $ws7
 
 # Instead of dmenu, use Rofi
 bindsym $mod+m exec rofi -show run -config /home/yuyakawakami/.config/i3/.Xresources 
@@ -218,6 +219,7 @@ exec firefox
 exec xbindkeys # For multimedia controls
 exec fcitx # For Japanese input
 exec spotify
+exec keepass # Start keepass at launch
 
 #Start reshift without notificaton
 exec --no-startup-id redshift
