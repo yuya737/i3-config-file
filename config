@@ -208,7 +208,7 @@ bindsym $mod+Shift+x exec betterlockscreen -l dim
 
 # Assign to specific workspace
 for_window [class="Spotify"] move to workspace $ws8
-for_window [class="keepass"] move to workspace $ws8
+for_window [class="KeePass2"] move to workspace $ws7
 assign [class="Firefox"] $ws2
 
 # Instead of dmenu, use Rofi
