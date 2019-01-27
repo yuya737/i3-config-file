@@ -220,6 +220,7 @@ exec xbindkeys # For multimedia controls
 exec fcitx # For Japanese input
 exec spotify
 exec keepass # Start keepass at launch
+exec papercut # Start papercut for printing
 
 #Start reshift without notificaton
 exec --no-startup-id redshift
