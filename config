@@ -201,8 +201,8 @@ bar {
 }
 
 # Screen brightness controls with notification
-bindsym XF86MonBrightnessUp exec "light -A 5 
-bindsym XF86MonBrightnessDown exec "light -U 5 
+bindsym XF86MonBrightnessUp exec xbacklight -inc 15
+bindsym XF86MonBrightnessDown exec xbacklight -dec 15
 
 bindsym $mod+Shift+x exec betterlockscreen -l dim 
 
