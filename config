@@ -99,14 +99,14 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: Terminal "
-set $ws2 "2: Firefox  "
+set $ws1 "1:Terminal"
+set $ws2 "2:Firefox"
 set $ws3 "3"
 set $ws4 "4"
-set $ws5 "5: Rambox "
+set $ws5 "5:Rambox"
 set $ws6 "6"
-set $ws7 "7 Keepass "
-set $ws8 "8: Spotify "
+set $ws7 "7:Keepass"
+set $ws8 "8:Spotify"
 set $ws9 "9"
 set $ws10 "10"
 
@@ -187,23 +187,32 @@ hide_edge_borders both
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3blocks
-	colors {
-		background $bg-colors
-	    	separator #757575
-		#                  border             background         text
-		focused_workspace  $bg-color          $bg-color          $text-color
-		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
-	}
-	font pango:Devaju Sans Mono 8
-}
+# bar {
+#         status_command i3blocks
+# 	colors {
+# 		background $bg-colors
+# 	    	separator #757575
+# 		#                  border             background         text
+# 		focused_workspace  $bg-color          $bg-color          $text-color
+# 		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+# 		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+# 	}
+# 	font pango:Devaju Sans Mono 8
+# }
+# Audio Controls
+set $inc --no-startup-id amixer sset Master 2%+
+set $dec --no-startup-id amixer sset Master 2%-
+set $mute --no-startup-id amixer sset Master toggle
+bindsym XF86AudioMute           exec $mute
+bindsym XF86AudioLowerVolume    exec $dec
+bindsym XF86AudioRaiseVolume exec $inc
+
 
 # Screen brightness controls with notification
 bindsym XF86MonBrightnessUp exec xbacklight -inc 15
 bindsym XF86MonBrightnessDown exec xbacklight -dec 15
 
+# Screen Locking
 bindsym $mod+Shift+x exec betterlockscreen -l dim 
 
 # Assign to specific workspace
@@ -226,5 +235,6 @@ exec rambox # Start rambox
 
 #Start reshift without notificaton
 exec --no-startup-id redshift
+exec --no-startup-id polybarstart
 
 exec_always feh --bg-scale /home/yuyakawakami/Desktop/wallpaper.png
