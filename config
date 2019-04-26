@@ -209,8 +209,8 @@ bindsym XF86AudioRaiseVolume exec $inc
 
 
 # Screen brightness controls with notification
-bindsym XF86MonBrightnessUp exec xbacklight -inc 15
-bindsym XF86MonBrightnessDown exec xbacklight -dec 15
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5
 
 # Screen Locking
 bindsym $mod+Shift+x exec betterlockscreen -l dim 
@@ -232,6 +232,7 @@ exec spotify
 exec keepass # Start keepass at launch
 exec papercut # Start papercut for printing
 exec rambox # Start rambox
+exec compton
 
 #Start reshift without notificaton
 exec --no-startup-id redshift
