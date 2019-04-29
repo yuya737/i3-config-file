@@ -222,7 +222,7 @@ for_window [class="Rambox"] move to workspace $ws5
 assign [class="Firefox"] $ws2
 
 # Instead of dmenu, use Rofi
-bindsym $mod+m exec rofi -show run -config /home/yuyakawakami/.config/i3/.Xresources 
+bindsym $mod+m exec rofi -show run -theme mytheme
 
 # Start neccessary functions
 exec firefox
