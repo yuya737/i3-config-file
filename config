@@ -220,7 +220,7 @@ set $previous playerctl previous
 
 bindsym XF86AudioPlay exec $play-pause
 bindsym XF86AudioNext exec $next
-bindsym XF86AudioPrevious exec $previous
+bindsym XF86AudioPrev exec $previous
 
 # Screen Locking
 bindsym $mod+Shift+x exec betterlockscreen -l dim 
