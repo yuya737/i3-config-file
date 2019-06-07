@@ -209,8 +209,8 @@ bindsym XF86AudioRaiseVolume exec $inc
 
 
 # Screen brightness controls with notification
-bindsym XF86MonBrightnessUp exec xbacklight -inc 5
-bindsym XF86MonBrightnessDown exec xbacklight -dec 5
+bindsym XF86MonBrightnessUp exec light -A 5
+bindsym XF86MonBrightnessDown exec light -U 5
 
 # Screen Locking
 bindsym $mod+Shift+x exec betterlockscreen -l dim 
