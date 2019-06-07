@@ -203,6 +203,7 @@ hide_edge_borders both
 set $inc --no-startup-id amixer sset Master 2%+
 set $dec --no-startup-id amixer sset Master 2%-
 set $mute --no-startup-id amixer sset Master toggle
+
 bindsym XF86AudioMute           exec $mute
 bindsym XF86AudioLowerVolume    exec $dec
 bindsym XF86AudioRaiseVolume exec $inc
@@ -211,6 +212,15 @@ bindsym XF86AudioRaiseVolume exec $inc
 # Screen brightness controls with notification
 bindsym XF86MonBrightnessUp exec light -A 5
 bindsym XF86MonBrightnessDown exec light -U 5
+
+# Audio controls
+set $play-pause playerctl play-pause
+set $next playerctl next
+set $previous playerctl previous
+
+bindsym XF86AudioPlay exec $play-pause
+bindsym XF86AudioNext exec $next
+bindsym XF86AudioPrevious exec $previous
 
 # Screen Locking
 bindsym $mod+Shift+x exec betterlockscreen -l dim 
