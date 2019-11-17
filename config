@@ -243,6 +243,7 @@ exec keepass # Start keepass at launch
 exec papercut # Start papercut for printing
 exec rambox # Start rambox
 exec compton
+exec .config/polybar/launch.sh
 
 #Start reshift without notificaton
 exec --no-startup-id redshift
