@@ -237,9 +237,9 @@ bindsym $mod+m exec rofi -show run -theme mytheme
 # Start neccessary functions
 exec firefox
 exec xbindkeys # For multimedia controls
-exec fcitx # For Japanese input
+# exec fcitx # For Japanese input
 exec spotify
-exec keepass # Start keepass at launch
+exec keepassxc # Start keepass at launch
 exec papercut # Start papercut for printing
 exec rambox # Start rambox
 exec compton
