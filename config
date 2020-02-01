@@ -227,7 +227,7 @@ bindsym $mod+Shift+x exec betterlockscreen -l dim
 
 # Assign to specific workspace
 for_window [class="Spotify"] move to workspace $ws8
-for_window [class="KeePass2"] move to workspace $ws7
+for_window [class="KeePassXC"] move to workspace $ws7
 for_window [class="Rambox"] move to workspace $ws5
 assign [class="Firefox"] $ws2
 
