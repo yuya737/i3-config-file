@@ -32,7 +32,7 @@ font pango:System San Francisco 8
 floating_modifier $mod
 
 # start a terminalcom
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec gnome-terminal -e fish
 
 # kill focused window
 bindsym $mod+q kill
